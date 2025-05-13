@@ -1,0 +1,74 @@
+.tutorial-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tutorial-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tutorial-form input[type="text"],
+.tutorial-form input[type="datetime-local"],
+.tutorial-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.tutorial-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.tutorial-form label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+.tutorial-form button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffa600;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tutorial-form button:hover {
+  background-color: #ff8800;
+}
+
+.tutorial-form input[type="file"] {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.tutorial-form img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.tutorial-form button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.tutorial-form button[disabled]:hover {
+  background-color: #ccc;
+}

@@ -1,0 +1,52 @@
+/* src/SplashScreen.css */
+.splash-screen {
+  height: 100vh;
+  background-color: #0a66c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in;
+}
+
+.branding-container {
+  text-align: center;
+  animation: slideUpFade 1.4s ease-out;
+}
+
+.branding-title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.branding-subtitle {
+  color: #e6f0fa;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUpFade {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-5px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

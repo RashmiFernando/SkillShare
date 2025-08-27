@@ -75,8 +75,8 @@ skill-share/
 ### Backend Setup
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/skill-share.git
-cd skill-share/backend
+git clone https://github.com/RashmiFernando/SkillShare.git
+cd SkillShare/backend
 
 # Install dependencies and run
 ./mvnw spring-boot:run
@@ -116,37 +116,6 @@ REACT_APP_API_BASE_URL=http://localhost:8080/api
 REACT_APP_OAUTH_CLIENT_ID=your_oauth_client_id
 ```
 
-## 🔗 API Endpoints
-
-### Authentication
-- `POST /api/auth/login` - User login
-- `POST /api/auth/logout` - User logout
-- `GET /api/auth/user` - Get current user
-
-### Posts Management
-- `GET /api/posts` - Get all posts
-- `POST /api/posts` - Create new post
-- `PUT /api/posts/{id}` - Update post
-- `DELETE /api/posts/{id}` - Delete post
-
-### User Management
-- `GET /api/users/{id}` - Get user profile
-- `PUT /api/users/{id}` - Update user profile
-- `POST /api/users/{id}/follow` - Follow user
-- `DELETE /api/users/{id}/follow` - Unfollow user
-
-### Comments & Interactions
-- `GET /api/posts/{id}/comments` - Get post comments
-- `POST /api/posts/{id}/comments` - Add comment
-- `PUT /api/comments/{id}` - Update comment
-- `DELETE /api/comments/{id}` - Delete comment
-- `POST /api/posts/{id}/like` - Like/unlike post
-
-### Learning Plans
-- `GET /api/learning-plans` - Get user learning plans
-- `POST /api/learning-plans` - Create learning plan
-- `PUT /api/learning-plans/{id}` - Update learning plan
-- `DELETE /api/learning-plans/{id}` - Delete learning plan
 
 ## 🧪 Testing
 
@@ -173,13 +142,13 @@ npm run test:coverage
 ### Overall Architecture
 - **Client Tier**: React Web Application
 - **Application Tier**: Spring Boot REST API
-- **Data Tier**: [Your Database Choice]
+- **Data Tier**: MongoDB
 
 ### REST API Architecture
-- Controller Layer (REST endpoints)
-- Service Layer (Business logic)
-- Repository Layer (Data access)
-- Model Layer (Entity definitions)
+- **Controller Layer** (REST endpoints)
+- **Service Layer** (Business logic)
+- **Repository Layer** (Data access)
+- **Model Layer** (Entity definitions)
 
 ## 🔐 Security Features
 
@@ -188,7 +157,6 @@ npm run test:coverage
 - CORS configuration
 - Input validation and sanitization
 - Secure file upload handling
-
 
 ## 🎨 UI/UX Features
 
